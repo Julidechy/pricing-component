@@ -1,0 +1,24 @@
+{
+  "name": "pricing-component",
+  "version": "1.0.0",
+  "description": "Front End Challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss styles/input.css -o styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julidechy/pricing-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julidechy/pricing-component/issues"
+  },
+  "homepage": "https://github.com/Julidechy/pricing-component#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
