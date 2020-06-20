@@ -5,8 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Component</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/custom.css" />
   </head>
-  <body></body>
+  <body
+    class="antialiased relative font-montserrat min-h-screen bg-grayblue-100"
+  >
+    <div class="relative overflow-hidden w-full mx-auto">
+      <svg
+        class="top-svg absolute transform -translate-y-6 right-0 translate-x-56"
+        xmlns="http://www.w3.org/2000/svg"
+        width="375"
+        height="658"
+      >
+        <g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2">
+          <path
+            d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"
+          />
+          <path
+            d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"
+          />
+          <path
+            d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"
+          />
+        </g>
+      </svg>
+      <h1
+        class="font-bold text-base text-3xl text-grayblue-600 text-center pt-10"
+      >
+        Our Pricing
+      </h1>
+      <div class="toggle-btn flex justify-center items-center mt-10 mb-10">
+        <span class="mr-6 text-grayblue-400 font-bold text-sm">Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="checkbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span class="ml-6 text-grayblue-400 font-bold text-sm">Monthly</span></div>
+      </div>
+      <!--Cards-->
+      <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10">
+        <h2 class="text-center mt-2 text-grayblue-600 font-bold">Basic</h2>
+        <div class="flex flex-row justify-center items-center">
+          <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
+          <p class="annually font-bold text-grayblue-900 text-6xl">199.99</p>
+          <p class="monthly text2 font-bold text-grayblue-900 text-6xl">19.99</p>
+        </div>
+        <ul class="list-none mx-2">
+          <li
+            class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            500 GB Storage
+          </li>
+          <li
+            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            2 Users Allowed
+          </li>
+          <li
+            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            Send up to 3 GB
+          </li>
+        </ul>
+        <a
+          class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+          href="#"
+          >Learn More</a
+        >
+      </div>
+      <div class="card-wrapper bg-gradient-to-bottom rounded-lg p-6 mx-4 mt-10">
+        <h2 class="text-center mt-2 text-white font-bold">Professional</h2>
+        <div class="flex flex-row justify-center items-center">
+          <p class="font-bold text-white text-3xl mr-1">$</p>
+          <p class="annually font-bold text-white text-6xl">249.99</p>
+          <p class="monthly text2 font-bold text-white text-6xl">24.99</p>
+        </div>
+        <ul class="list-none mx-2">
+          <li
+            class="border-t border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+          >
+            1 TB Storage
+          </li>
+          <li
+            class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+          >
+            5 Users Allowed
+          </li>
+          <li
+            class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+          >
+            Send up to 10 GB
+          </li>
+        </ul>
+        <a
+          class="btn-gradient-professional block text-center border mx-auto bg-white text-blue-900 text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+          href="#"
+          >Learn More</a
+        >
+      </div>
+      <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10 mb-10">
+        <h2 class="text-center mt-2 text-grayblue-600 font-bold">Master</h2>
+        <div class="flex flex-row justify-center items-center">
+          <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
+          <p class="annually font-bold text-grayblue-900 text-6xl">399.99</p>
+          <p class="monthly text2 font-bold text-grayblue-900 text-6xl">39.99</p>
+        </div>
+        <ul class="list-none mx-2">
+          <li
+            class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            2 TB Storage
+          </li>
+          <li
+            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            10 Users Allowed
+          </li>
+          <li
+            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+          >
+            Send up to 20 GB
+          </li>
+        </ul>
+        <a
+          class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+          href="#"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <script>
+        function check() {
+            var checkBox = document.getElementById("checkbox");
+            var annually = document.getElementsByClassName("annually");
+            var monthly = document.getElementsByClassName("monthly");
+
+            for (var i = 0; i < annually.length; i++) {
+                if (checkBox.checked == true) {
+                  monthly[i].style.display = "block";
+                  annually[i].style.display = "none";
+                } else if (checkBox.checked == false) {
+                  monthly[i].style.display = "none";
+                  annually[i].style.display = "block";
+                }
+            }
+            }
+            check();
+
+    </script>
+  </body>
 </html>
