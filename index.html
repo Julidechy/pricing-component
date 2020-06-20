@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="styles/custom.css" />
   </head>
   <body
-    class="antialiased relative font-montserrat min-h-screen bg-grayblue-100"
+    class="antialiased relative font-montserrat min-h-screen bg-grayblue-100 md:max-h-screen md:overflow-hidden"
   >
-    <div class="relative overflow-hidden w-full mx-auto">
       <svg
-        class="top-svg absolute transform -translate-y-6 right-0 translate-x-56"
+        class="absolute top-0 right-0 top-svg transform w-1/2 -translate-y-10 md:w-auto md:translate-y-0"
         xmlns="http://www.w3.org/2000/svg"
         width="375"
         height="658"
@@ -34,6 +33,7 @@
           />
         </g>
       </svg>
+    <div class="relative overflow-hidden w-full mx-auto">
       <h1
         class="font-bold text-base text-3xl text-grayblue-600 text-center pt-10"
       >
@@ -48,97 +48,108 @@
         <span class="ml-6 text-grayblue-400 font-bold text-sm">Monthly</span></div>
       </div>
       <!--Cards-->
-      <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10">
-        <h2 class="text-center mt-2 text-grayblue-600 font-bold">Basic</h2>
-        <div class="flex flex-row justify-center items-center">
-          <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
-          <p class="annually font-bold text-grayblue-900 text-6xl">199.99</p>
-          <p class="monthly text2 font-bold text-grayblue-900 text-6xl">19.99</p>
+        <div class="md:flex md:flex-row md:justify-center md:items-center mb-10 md:mb-20">
+          <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10 md:w-full md:mx-0">
+            <h2 class="text-center mt-2 text-grayblue-600 font-bold">Basic</h2>
+            <div class="flex flex-row justify-center items-center">
+              <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
+              <p class="annually font-bold text-grayblue-900 text-6xl">199.99</p>
+              <p class="monthly text2 font-bold text-grayblue-900 text-6xl">19.99</p>
+            </div>
+            <ul class="list-none mx-1">
+              <li
+                class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                500 GB Storage
+              </li>
+              <li
+                class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                2 Users Allowed
+              </li>
+              <li
+                class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                Send up to 3 GB
+              </li>
+            </ul>
+            <a
+              class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+              href="#"
+              >Learn More</a
+            >
+          </div>
+          <div class="card-wrapper bg-gradient-to-bottom rounded-lg p-6 mx-4 mt-10 md:py-12 md:mx-0">
+            <h2 class="text-center mt-2 text-white font-bold">Professional</h2>
+            <div class="flex flex-row justify-center items-center">
+              <p class="font-bold text-white text-3xl mr-1">$</p>
+              <p class="annually font-bold text-white text-6xl">249.99</p>
+              <p class="monthly text2 font-bold text-white text-6xl">24.99</p>
+            </div>
+            <ul class="list-none mx-1">
+              <li
+                class="border-t border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+              >
+                1 TB Storage
+              </li>
+              <li
+                class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+              >
+                5 Users Allowed
+              </li>
+              <li
+                class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
+              >
+                Send up to 10 GB
+              </li>
+            </ul>
+            <a
+              class="btn-gradient-professional block text-center border mx-auto bg-white text-blue-900 text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+              href="#"
+              >Learn More</a
+            >
+          </div>
+          <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10 md:w-full md:mx-0">
+            <h2 class="text-center mt-2 text-grayblue-600 font-bold">Master</h2>
+            <div class="flex flex-row justify-center items-center">
+              <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
+              <p class="annually font-bold text-grayblue-900 text-6xl">399.99</p>
+              <p class="monthly text2 font-bold text-grayblue-900 text-6xl">39.99</p>
+            </div>
+            <ul class="list-none mx-1">
+              <li
+                class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                2 TB Storage
+              </li>
+              <li
+                class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                10 Users Allowed
+              </li>
+              <li
+                class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
+              >
+                Send up to 20 GB
+              </li>
+            </ul>
+            <a
+              class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
+              href="#"
+              >Learn More</a
+            >
+          </div>
         </div>
-        <ul class="list-none mx-2">
-          <li
-            class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            500 GB Storage
-          </li>
-          <li
-            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            2 Users Allowed
-          </li>
-          <li
-            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            Send up to 3 GB
-          </li>
-        </ul>
-        <a
-          class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
-          href="#"
-          >Learn More</a
-        >
-      </div>
-      <div class="card-wrapper bg-gradient-to-bottom rounded-lg p-6 mx-4 mt-10">
-        <h2 class="text-center mt-2 text-white font-bold">Professional</h2>
-        <div class="flex flex-row justify-center items-center">
-          <p class="font-bold text-white text-3xl mr-1">$</p>
-          <p class="annually font-bold text-white text-6xl">249.99</p>
-          <p class="monthly text2 font-bold text-white text-6xl">24.99</p>
-        </div>
-        <ul class="list-none mx-2">
-          <li
-            class="border-t border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
-          >
-            1 TB Storage
-          </li>
-          <li
-            class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
-          >
-            5 Users Allowed
-          </li>
-          <li
-            class="border-b border-blue-500 w-full text-center text-white py-4 font-bold text-base"
-          >
-            Send up to 10 GB
-          </li>
-        </ul>
-        <a
-          class="btn-gradient-professional block text-center border mx-auto bg-white text-blue-900 text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
-          href="#"
-          >Learn More</a
-        >
-      </div>
-      <div class="card-wrapper bg-white rounded-lg p-6 mx-4 mt-10 mb-10">
-        <h2 class="text-center mt-2 text-grayblue-600 font-bold">Master</h2>
-        <div class="flex flex-row justify-center items-center">
-          <p class="font-bold text-grayblue-900 text-3xl mr-1">$</p>
-          <p class="annually font-bold text-grayblue-900 text-6xl">399.99</p>
-          <p class="monthly text2 font-bold text-grayblue-900 text-6xl">39.99</p>
-        </div>
-        <ul class="list-none mx-2">
-          <li
-            class="border-t border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            2 TB Storage
-          </li>
-          <li
-            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            10 Users Allowed
-          </li>
-          <li
-            class="border-b border-grayblue-400 w-full text-center text-grayblue-600 py-4 font-bold text-base"
-          >
-            Send up to 20 GB
-          </li>
-        </ul>
-        <a
-          class="btn-gradient block text-center border mx-auto bg-gradient text-white text-xs leading-none font-bold uppercase tracking-widest py-4 rounded-md mt-8 focus:outline-none"
-          href="#"
-          >Learn More</a
-        >
-      </div>
     </div>
+    <svg
+    class="hidden md:block absolute left-0 top-svg transform -translate-y-56"
+    xmlns="http://www.w3.org/2000/svg"
+    width="375"
+    height="658"
+  >
+    <g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2">
+      <path d="M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126"/><path d="M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859"/><path d="M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892"/></g>
+  </svg>
     <script>
         function check() {
             var checkBox = document.getElementById("checkbox");
