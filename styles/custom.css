@@ -20,16 +20,15 @@
   background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
 }
 
-.btn-gradient:active {
+.btn-gradient:active, .btn-gradient:hover {
   color: #696fdd;
   background-color: #fff;
   border: 1px solid #696fdd;
+  color: #fff;
 }
 
-.btn-gradient-professional:active {
-  color: #fff;
-  background: transparent;
-  border: 1px solid #a3a8f0;
+.btn-gradient-professional:active, .btn-gradient-professional:hover {
+ border: 1px solid #a3a8f0;
 }
 
 .switch {
